@@ -17,8 +17,8 @@ import ast
 import utils
 import warnings
 
-np.set_printoptions(suppress=True)
-warnings.simplefilter(action='ignore', category=FutureWarning)
+np.set_printoptions(suppress=True) # 소수점 이하 값을 일반적인 부동소수점 표기로 설정(과학적 표기법 X)
+warnings.simplefilter(action='ignore', category=FutureWarning) # 발생할 수 있는 경고 무시
 ## =================================== argparse ========================================
 parser = argparse.ArgumentParser()
 # parser.add_argument('--model', default='test')
